@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // Import all logos at once using Vite's glob import
 const logoModules = import.meta.glob("../assets/images/*.svg", { eager: true });
 
-const Card = ({ logo, name, description, isActive }) => {
+const Card = ({ logo, name, description, isActive, onToggle, onRemove }) => {
   const [logoSrc, setLogoSrc] = useState(null);
 
   useEffect(() => {
@@ -24,25 +24,21 @@ const Card = ({ logo, name, description, isActive }) => {
     <div className="card">
       <div className="flex flex-row gap-6">
         <img src={logoSrc} alt={`${name} logo`} className="w-18 h-18" />
-        <div>
+        <div className="flex flex-col gap-1.5">
           <h3 className="text-xl font-semibold text-theme">{name}</h3>
-          <p className="text-gray-600">{description}</p>
+          <p className="text-paragraph">{description}</p>
         </div>
       </div>
       <div className="flex flex-row justify-between">
-        <button className="choice-buttons !border hover:!border-red-400">
+        <button
+          className="choice-buttons border button-border hover:!border-red-400"
+          onClick={onRemove}
+        >
           Remove
         </button>
 
         <label className="switch">
-          <input
-            type="checkbox"
-            checked={isActive}
-            onClick={() => {
-              console.log("Toggle active state");
-              isActive = !isActive;
-            }}
-          />
+          <input type="checkbox" checked={isActive} onChange={onToggle} />
           <span className="slider round"></span>
         </label>
       </div>
