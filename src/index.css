@@ -61,14 +61,14 @@
         font-family: var(--font-body);
     }
 
-    .button-border{
-        border: 1px solid var(--color-border) !important;
-    }
+  
     .text-paragraph{
         color: var(--color-paragraph);
         font-size: 16px;
         /* font-family: var(--font-body); */
     }
+
+     
 
     .choice-buttons{
       background: var(--color-primary);
@@ -77,11 +77,16 @@
       padding: 12px;
       min-width: 75px;
       cursor: pointer;
-      border: none;
+      
       height: fit-content;
       border: 2px solid transparent;
       /* font-family: var(--font-body); */
     }
+
+    .choice-buttons.button-border {
+    border: 2px solid var(--color-border);
+}
+
     .choice-buttons:hover{
       background: var(--color-secondary);
       border: 2px solid var(--color-red-400);

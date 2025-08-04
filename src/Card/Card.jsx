@@ -29,16 +29,21 @@ const Card = ({ logo, name, description, isActive, onToggle, onRemove }) => {
           <p className="text-paragraph">{description}</p>
         </div>
       </div>
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between items-center ">
         <button
-          className="choice-buttons border button-border hover:!border-red-400"
+          className="choice-buttons button-border hover:!border-red-400"
           onClick={onRemove}
         >
           Remove
         </button>
 
         <label className="switch">
-          <input type="checkbox" checked={isActive} onChange={onToggle} />
+          <input
+            type="checkbox"
+            checked={isActive}
+            onChange={onToggle}
+            aria-label={`${name} toggle switch`}
+          />
           <span className="slider round"></span>
         </label>
       </div>

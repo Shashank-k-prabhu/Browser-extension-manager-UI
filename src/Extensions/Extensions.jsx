@@ -23,7 +23,7 @@ const Extensions = () => {
   };
 
   return (
-    <div className=" md:py-10">
+    <main className=" md:py-10">
       <div className="flex flex-col md:flex-row justify-between py-1 gap-6 items-center">
         <h2 className="text-3xl font-bold text-theme">Extensions List</h2>
         <div className="flex flex-row gap-4">
@@ -75,7 +75,7 @@ const Extensions = () => {
             />
           ))}
       </div>
-    </div>
+    </main>
   );
 };
 
