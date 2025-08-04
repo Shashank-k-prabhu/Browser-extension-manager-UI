@@ -6,7 +6,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const icon = theme === "light" ? moon : sun;
   return (
-    <main className="w-full bg-nav text-white  px-4 py-2 flex items-center justify-between my-8 rounded-2xl">
+    <section className="w-full bg-nav text-white  px-4 py-2 flex items-center justify-between my-8 rounded-2xl">
       <div className="flex flex-row gap-2">
         <img src={logo} alt="Logo" className="h-8" />
         <h1 className="text-2xl font-bold text-theme">Extensions</h1>
@@ -22,7 +22,7 @@ const Navbar = () => {
           className="inline-block px-1 py-2 rounded-xl"
         />
       </button>
-    </main>
+    </section>
   );
 };
 

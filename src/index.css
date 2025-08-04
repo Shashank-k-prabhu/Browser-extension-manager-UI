@@ -74,8 +74,8 @@
       background: var(--color-primary);
       color: var(--color-text);
       border-radius: 2rem;
-      padding: 12px;
-      min-width: 75px;
+      padding: 0.75rem;
+      min-width: 4.6875rem;
       cursor: pointer;
       
       height: fit-content;
