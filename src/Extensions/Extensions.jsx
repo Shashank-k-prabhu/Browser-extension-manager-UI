@@ -28,6 +28,7 @@ const Extensions = () => {
         <h2 className="text-3xl font-bold text-theme">Extensions List</h2>
         <div className="flex flex-row gap-4">
           <button
+            type="button"
             className={`choice-buttons ${
               state === "All" ? "selected-button-text" : ""
             }`}
@@ -36,6 +37,7 @@ const Extensions = () => {
             All
           </button>
           <button
+            type="button"
             className={`choice-buttons ${
               state === "Active"
                 ? "ring-2 ring-red-400 ring-offset-[1.5px] !bg-red-500 selected-button-text"
@@ -47,6 +49,7 @@ const Extensions = () => {
           </button>
 
           <button
+            type="button"
             className={`choice-buttons ${
               state === "Inactive"
                 ? "ring-2 ring-red-400 ring-offset-[1.5px] !bg-red-500 selected-button-text"

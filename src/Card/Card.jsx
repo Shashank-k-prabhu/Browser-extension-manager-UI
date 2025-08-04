@@ -31,6 +31,7 @@ const Card = ({ logo, name, description, isActive, onToggle, onRemove }) => {
       </div>
       <div className="flex flex-row justify-between items-center ">
         <button
+          type="button"
           className="choice-buttons button-border hover:!border-red-400"
           onClick={onRemove}
         >

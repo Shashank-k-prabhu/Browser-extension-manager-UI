@@ -13,6 +13,7 @@ const Navbar = () => {
       </div>
       <button
         className="bg-text text-white font-bold py-2 px-3 rounded-xl cursor-pointer border-2 border-red-400"
+        type="button"
         onClick={toggleTheme}
       >
         <img
