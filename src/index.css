@@ -64,7 +64,7 @@
   
     .text-paragraph{
         color: var(--color-paragraph);
-        font-size: 16px;
+        font-size: 1rem;
         /* font-family: var(--font-body); */
     }
 
@@ -73,32 +73,32 @@
     .choice-buttons{
       background: var(--color-primary);
       color: var(--color-text);
-      border-radius: 32px;
+      border-radius: 2rem;
       padding: 12px;
       min-width: 75px;
       cursor: pointer;
       
       height: fit-content;
-      border: 2px solid transparent;
+      border: 0.125rem solid transparent;
       /* font-family: var(--font-body); */
     }
 
     .choice-buttons.button-border {
-    border: 2px solid var(--color-border);
+    border: 0.125rem solid var(--color-border);
 }
 
     .choice-buttons:hover{
       background: var(--color-secondary);
-      border: 2px solid var(--color-red-400);
+      border: 0.125rem solid var(--color-red-400);
       transition: all 0.2s ease-in-out;
     }
 
-    .selected-button-text{
+    .choice-buttons.selected-button-text{
       color: var(--color-selected-text);
       font-weight: 500;
-      box-shadow: 0 0 0 2px #f87171;
-      box-shadow: 0 0 0 1.5px var(--color-selected-text), 0 0 0 calc(1.5px + 2px) #f87171;
-      background-color: #ef4444 !important;
+      box-shadow: 0 0 0 .0125rem #f87171;
+      box-shadow: 0 0 0 0.09375rem var(--color-selected-text), 0 0 0 calc(0.09375rem + 0.125rem) #f87171;
+      background-color: #ef4444 
     }
 
     .card{
@@ -107,8 +107,8 @@
       background: var(--color-primary);
       padding: 1rem;
       border-radius: 0.75rem;
-      border: 1px solid var(--color-border);
-      gap: 2rem;
+      border: 0.0625rem solid var(--color-border);
+      gap: .75rem;
     }
 
 
@@ -118,8 +118,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 3.75rem;
+  height: 2.125rem;
 }
 
 .switch input {
@@ -143,10 +143,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 1.625rem;
+  width: 1.625rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -157,14 +157,14 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(1.625rem);
+  -ms-transform: translateX(1.625rem);
+  transform: translateX(1.625rem);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2.125rem;
 }
 
 .slider.round:before {
