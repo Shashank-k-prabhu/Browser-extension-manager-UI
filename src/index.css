@@ -16,7 +16,7 @@
   --color-red-500: hsl(3, 71%, 56%);
   --color-red-700: hsl(3, 77%, 44%);
 
-  --font-body: "Noto Sans", sans-serif;
+  --font-body: "Noto Sans";
 
   
 
@@ -26,6 +26,7 @@
 :root.theme-dark {
   --color-bg: linear-gradient(180deg, #040918 0%, #091540 100%);
   --color-text: var(--color-neutral-0);
+  --color-paragraph: var(--color-neutral-300);
   --color-primary: var(--color-neutral-800);
  --color-secondary: var(--color-neutral-600);
   --color-accent: var(--color-red-500);
@@ -37,6 +38,7 @@
 :root.theme-light {
   --color-bg: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
   --color-text: var(--color-neutral-900);
+  --color-paragraph: var(--color-neutral-600);
   --color-primary: var(--color-neutral-0);
    --color-secondary: var(--color-neutral-0);
   --color-accent: var(--color-red-400);
@@ -56,9 +58,18 @@
     }
     .text-theme{
         color: var(--color-text);
+        font-family: var(--font-body);
     }
 
-    .border
+    .button-border{
+        border: 1px solid var(--color-border) !important;
+    }
+    .text-paragraph{
+        color: var(--color-paragraph);
+        font-size: 16px;
+        /* font-family: var(--font-body); */
+    }
+
     .choice-buttons{
       background: var(--color-primary);
       color: var(--color-text);
@@ -69,6 +80,7 @@
       border: none;
       height: fit-content;
       border: 2px solid transparent;
+      /* font-family: var(--font-body); */
     }
     .choice-buttons:hover{
       background: var(--color-secondary);

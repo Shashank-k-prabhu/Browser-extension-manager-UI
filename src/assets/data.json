@@ -31,7 +31,7 @@
     },
     {
         "logo": "../assets/images/logo-viewport-buddy.svg",
-        "name": "ViewportBuddy",
+        "name": "Viewport Buddy",
         "description": "Simulates various screen resolutions directly within the browser.",
         "isActive": false
     },
@@ -43,7 +43,7 @@
     },
     {
         "logo": "../assets/images/logo-grid-guides.svg",
-        "name": "GridGuides",
+        "name": "Grid Guides",
         "description": "Overlay customizable grids and alignment guides on any webpage.",
         "isActive": false
     },
@@ -55,7 +55,7 @@
     },
     {
         "logo": "../assets/images/logo-link-checker.svg",
-        "name": "LinkChecker",
+        "name": "Link Checker",
         "description": "Scans and highlights broken links on any page.",
         "isActive": true
     },
@@ -67,7 +67,7 @@
     },
     {
         "logo": "../assets/images/logo-console-plus.svg",
-        "name": "ConsolePlus",
+        "name": "Console Plus",
         "description": "Enhanced developer console with advanced filtering and logging.",
         "isActive": true
     }
